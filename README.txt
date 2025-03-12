@@ -1,4 +1,4 @@
-# Chatbot Project
+# Chatbot project
 
 ## Overview
 This is an AI-powered chatbot with OneDrive integration, maintenance reporting, sentiment analysis, and file management features. The chatbot interacts with users, processes natural language inputs, and provides intelligent responses. It is integrated with Microsoft OneDrive for file operations and includes machine learning-based sentiment analysis to enhance interactions. 
