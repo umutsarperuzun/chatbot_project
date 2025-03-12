@@ -1,0 +1,43 @@
+// {
+//   "greetings": {
+//     "variations": ["hello", "hi", "hey", "greetings", "good morning", "good afternoon"],
+//     "responses": ["Hello! How can I help?", "Hi! What can I do for you?", "Hey! Ready to assist!", "Good to see you!", "Greetings! How can I help?"],
+//     "type": "friendly"
+//   },
+//   "farewells": {
+//     "variations": ["goodbye", "bye", "see you", "take care", "catch you later"],
+//     "responses": ["Goodbye! Reach out anytime.", "Bye! Come back if you need help.", "Take care!", "See you soon!"],
+//     "type": "formal"
+//   },
+//   "bot_identity": {
+//     "variations": ["what's your name", "who are you", "tell me about yourself", "are you a bot"],
+//     "responses": ["I'm your assistant chatbot.", "I'm an AI here to help.", "I'm a virtual assistant with a lot of answers."],
+//     "type": "informative"
+//   },
+//   "jokes": {
+//     "variations": ["tell me a joke", "make me laugh", "say something funny", "entertain me"],
+//     "responses": ["Why did the robot cross the road? To recharge!", "I would tell you a construction joke, but I'm still building it."],
+//     "type": "humor"
+//   },
+//   "small_talk": {
+//     "variations": ["how are you", "what's up", "how's it going", "how do you feel"],
+//     "responses": ["I'm here and ready to help!", "I'm always ready to assist.", "I'm feeling virtual and ready!"],
+//     "type": "friendly"
+//   },
+//   "abilities": {
+//     "variations": ["what can you do", "how can you help", "what's your purpose", "do you have skills"],
+//     "responses": ["I can answer questions, offer guidance, and assist with tasks.", "I'm here to provide information and assist you."],
+//     "type": "informative"
+//   },
+//   "facts": {
+//     "variations": ["tell me a fact", "do you know any facts", "share knowledge", "impress me"],
+//     "responses": ["Did you know honey never spoils?", "Sharks existed before trees!", "Bananas are berries, but strawberries aren't!"],
+//     "type": "informative"
+//   },
+//   "motivational_quotes": {
+//     "variations": ["motivate me", "give me inspiration", "cheer me up", "I need encouragement"],
+//     "responses": ["Believe in yourself! Every day is a fresh start.", "Stay positive, work hard, make it happen!"],
+//     "type": "motivational"
+//   }
+// }
+

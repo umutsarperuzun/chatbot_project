@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+    <style>
+        /* Temel stil ayarları */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #chat-container {
+            width: 400px;
+            max-width: 90%;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            padding: 16px;
+            position: relative;
+        }
+        #admin-button {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            padding: 8px 12px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .message {
+            display: flex;
+            margin: 8px 0;
+        }
+        .user-message {
+            justify-content: flex-end;
+        }
+        .bot-message {
+            justify-content: flex-start;
+        }
+        .bubble {
+            padding: 10px 15px;
+            border-radius: 15px;
+            max-width: 70%;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .user-bubble {
+            background-color: #dcf8c6;
+            color: #333;
+            align-self: flex-end;
+        }
+        .bot-bubble {
+            background-color: #e4e6eb;
+            color: #333;
+            align-self: flex-start;
+        }
+        #message-form {
+            display: flex;
+            margin-top: 10px;
+        }
+        #message-form input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            margin-right: 8px;
+        }
+        #message-form button {
+            padding: 10px 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="chat-container">
+        <a href="/admin" id="admin-button">Admin</a>
+
+        <div id="chat-box">
+            {% for msg in chat_history %}
+                <div class="message {{ 'user-message' if msg.sender == 'user' else 'bot-message' }}">
+                    <div class="bubble {{ 'user-bubble' if msg.sender == 'user' else 'bot-bubble' }}">
+                        {{ msg.text }}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <form id="message-form" action="/answer" method="POST">
+            <input type="text" id="message" name="message" placeholder="Type a message..." autocomplete="off">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
