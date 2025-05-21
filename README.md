@@ -1,4 +1,4 @@
-# 🤖 AI-Powered Chatbot with OneDrive Integration
+# 🤖 AI-Powered Chatbot with OneDrive Integration.
 
 ## 🧩 Overview  
 An intelligent, feature-rich chatbot application built with Flask, integrated with Microsoft OneDrive, and enhanced with NLP and sentiment analysis. It supports file operations, maintenance reporting, and vehicle management — all through an intuitive chat interface.
