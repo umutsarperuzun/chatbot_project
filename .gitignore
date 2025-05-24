@@ -1,0 +1,4 @@
+*.bin
+*pyc
+__pycache__
+sarper_secrets.py

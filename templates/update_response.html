@@ -77,14 +77,14 @@
                     {% for variation in response.category.variations %}
                         <li>
                             {{ variation.text }}
-                            <form action="{{ url_for('delete_variation', id=variation.id) }}" method="POST" style="display:inline;">
+                            <form action="{{ url_for('admin_bp.delete_variation', id=variation.id) }}" method="POST" style="display:inline;">
                                 {{ form.hidden_tag() }}
                                 <button type="submit">Delete</button>
                             </form>
                         </li>
                     {% endfor %}
                 </ul>
-                <form method="POST" action="{{ url_for('add_variation', id=response.id) }}">
+                <form method="POST" action="{{ url_for('admin_bp.add_variation', id=response.id) }}">
                     {{ form.hidden_tag() }}
                     <input type="text" name="new_variation" placeholder="Add new variation">
                     <button type="submit" class="add-new">Add Variation</button>
@@ -97,14 +97,14 @@
                     {% for res in response.category.responses %}
                         <li>
                             {{ res.text }}
-                            <form action="{{ url_for('delete_response', id=res.id) }}" method="POST" style="display:inline;">
+                            <form action="{{ url_for('admin_bp.delete_response', id=res.id) }}" method="POST" style="display:inline;">
                                 {{ form.hidden_tag() }}
                                 <button type="submit">Delete</button>
                             </form>
                         </li>
                     {% endfor %}
                 </ul>
-                <form method="POST" action="{{ url_for('add_response', id=response.id) }}">
+                <form method="POST" action="{{ url_for('admin_bp.add_response', id=response.id) }}">
                     {{ form.hidden_tag() }}
                     <input type="text" name="new_response" placeholder="Add new response">
                     <button type="submit" class="add-new">Add Response</button>
@@ -113,7 +113,7 @@
 
             {{ form.submit() }}
         </form>
-        <a href="{{ url_for('admin') }}">Back to Admin Panel</a>
+        <a href="{{ url_for('admin_bp.admin') }}">Back to Admin Panel</a>
     </div>
 </body>
 </html>

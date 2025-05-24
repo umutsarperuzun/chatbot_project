@@ -1,121 +1,81 @@
-# 🤖 AI-Powered Chatbot with OneDrive Integration.
+AI-Powered Chatbot with Sentiment Analysis and OneDrive Integration
 
-## 🧩 Overview  
-An intelligent, feature-rich chatbot application built with Flask, integrated with Microsoft OneDrive, and enhanced with NLP and sentiment analysis. It supports file operations, maintenance reporting, and vehicle management — all through an intuitive chat interface.
-
----
-
-## 🚀 Key Features
-
-- **🧠 Natural Language Processing (NLP):**  
-  Understands and responds to user input intelligently using pre-trained models.
-
-- **☁️ OneDrive Integration:**  
-  Upload, search, download, and share files directly via the chatbot using the Microsoft OneDrive API.
-
-- **🛠 Maintenance Reporting System:**  
-  Users can submit and review maintenance reports for better issue tracking.
-
-- **📈 Sentiment Analysis:**  
-  Analyzes user messages and classifies them as *positive*, *neutral*, or *negative* using machine learning.
-
-- **🚗 Vehicle Information Management:**  
-  Tracks vehicle details, past maintenance, and upcoming service schedules.
-
-- **👤 Session Management:**  
-  Lightweight user recognition based on first and last name — no login required.
-
-- **💬 Interactive Chat Interface:**  
-  Clean and dynamic UI that mimics real-world chatbot experiences.
+This project is an AI-powered chatbot designed to streamline operations like fleet management, maintenance reporting, and document handling. The system also includes machine learning-based sentiment analysis and integrates with Microsoft OneDrive for seamless cloud storage operations.
 
 ---
 
-## ⚙️ Installation & Setup
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/UmutsUzun/chatbot_project.git
-cd chatbot-project
-```
-
-### 2. Create and Activate a Virtual Environment
-```bash
-python -m venv venv
-source venv/bin/activate      # macOS / Linux
-venv\Scripts\activate         # Windows
-```
-
-### 3. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
-
-> ⚠️ **Note:** PyTorch is not included in `requirements.txt`. Install it separately:
-```bash
-pip install torch torchvision torchaudio
-```
-For GPU support, refer to the [official PyTorch installation guide](https://pytorch.org/get-started/locally/).
-
-### 4. Environment Configuration  
-Create a `.env` file in the root directory and add the following:
-```env
-ONEDRIVE_CLIENT_ID=your_client_id
-ONEDRIVE_CLIENT_SECRET=your_client_secret
-ONEDRIVE_REDIRECT_URI=your_redirect_uri
-DATABASE_URL=your_database_url
-```
-
-### 5. Run Database Migrations
-```bash
-flask db upgrade
-```
-
-### 6. Start the Application
-```bash
-flask run
-```
-Open your browser and navigate to: `http://127.0.0.1:5000/`
+Features:
+- Natural Language Processing (NLP) for user-friendly interactions.
+- Sentiment analysis to detect positive, neutral, or negative sentiments in user messages.
+- Vehicle management and maintenance reporting functionalities.
+- Integration with OneDrive for file upload, download, and sharing.
 
 ---
 
-## 💡 How to Use
-
-- Enter your **first name** and **last name** to start a session.  
-- Use intuitive commands such as:
-  - `"Upload a file to OneDrive"`
-  - `"Search for a file"`
-  - `"Download a file"`
-  - `"Report a maintenance issue"`
-  - `"View maintenance reports"`
-- The chatbot handles and responds using NLP and sentiment analysis.
+Prerequisites:
+To run the project, you need:
+- Python 3.9+
+- A MySQL database server
+- OneDrive API credentials
+- Required Python packages (see `requirements.txt`)
 
 ---
 
-## 🛠 Technologies Used
+Setup Instructions:
 
-- **Backend:** Flask, SQLAlchemy  
-- **Frontend:** Bootstrap, JavaScript  
-- **Machine Learning:** PyTorch, CardiffNLP Sentiment Model  
-- **Database:** PostgreSQL  
-- **Cloud Storage:** Microsoft OneDrive API
+1. Clone the Repository:
+   ```
+   git clone <repository-url>
+   cd <repository-folder>
+   ```
+
+2. Install Dependencies:
+   Install the necessary Python libraries:
+   ```
+   pip install -r requirements.txt
+   ```
+
+3. Set Up the Database:
+   - Import the SQL schema file to your MySQL server:
+     ```
+     mysql -u <username> -p <database_name> < chatbot_db.sql
+     ```
+   - Update the database connection settings in the `config.py` file.
+
+4. Configure OneDrive Integration:
+   - Add your OneDrive API credentials (client ID and client secret) to the `config.py` file.
+
+5. Run the Application:
+   Start the Flask development server:
+   ```
+   python app.py
+   ```
+   The chatbot will be accessible at `http://127.0.0.1:5000`.
 
 ---
 
-## 🤝 Contributing
-
-1. Fork the repository  
-2. Create a new branch: `git checkout -b feature-branch`  
-3. Commit your changes: `git commit -m "Add new feature"`  
-4. Push to GitHub: `git push origin feature-branch`  
-5. Open a **Pull Request**
-
----
-
-## 📄 License  
-MIT License — see the `LICENSE` file for details.
+Project Structure:
+- `app.py`: Main application entry point.
+- `config.py`: Configuration file for database and API credentials.
+- `models.py`: Database models and schema definitions.
+- `routes/`: Contains Flask routes for chatbot functionalities.
+- `templates/`: HTML files for the web interface.
+- `static/`: CSS, JavaScript, and image files.
+- `requirements.txt`: List of required Python packages.
 
 ---
 
-## 📬 Contact  
-For support or inquiries:  
-**Sarper Uzun** — `sarperuzun1@gmail.com`
+How to Use:
+1. Launch the application in your browser (`http://127.0.0.1:5000`).
+2. Interact with the chatbot to:
+   - Search, upload, or download files via OneDrive.
+   - Create or query maintenance reports.
+   - Retrieve vehicle information.
+
+---
+
+Contact:
+For any questions or issues, please contact:
+- Email: [your-email@example.com]
+
+---
