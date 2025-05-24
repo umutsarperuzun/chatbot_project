@@ -1,0 +1,78 @@
+{
+    "responses": {
+      "positive": {
+        "variations": [
+          "Great job!", "Well done!", "This is amazing!", "Fantastic work!",
+          "Excellent effort!", "Keep it up!", "Outstanding performance!", "Impressive!",
+          "You nailed it!", "Superb!", "Exceptional work!", "Brilliant execution!",
+          "Amazing attention to detail!", "Phenomenal effort!", "Remarkable achievement!",
+          "Extraordinary performance!", "Kudos!", "You're doing fantastic!"
+        ],
+        "responses": [
+          "Thank you for your positive feedback! Let me know if there's anything else I can do.",
+          "We appreciate your kind words. How can I assist you further?",
+          "Your feedback motivates us. Feel free to ask more questions!",
+          "It’s always great to hear such feedback. How else may I assist you?",
+          "Your encouragement is appreciated. Let’s continue achieving great results together!",
+          "We’re thrilled you’re satisfied. Let us know if there’s more we can do.",
+          "Your kind words inspire us. Thanks for sharing your thoughts!",
+          "Glad to hear that! Feel free to reach out anytime."
+        ]
+      },
+      "neutral": {
+        "variations": [
+          "Can you provide vehicle information for plate AB1234?",
+          "I need to upload a file to OneDrive.",
+          "Show me the maintenance reports from last month.",
+          "What are the upcoming maintenance schedules?",
+          "Could you display all recent file uploads?",
+          "I need help with sharing a file via OneDrive.",
+          "Retrieve the last known location of vehicle XY5678.",
+          "Display vehicle details for license plate EF9087.",
+          "List all vehicles requiring maintenance this week.",
+          "Provide a summary of maintenance tasks for January.",
+          "Help me search for documents containing the keyword 'budget'.",
+          "Generate a report on vehicle fuel consumption trends."
+        ],
+        "responses": [
+          "Sure, let me assist you with that.",
+          "Okay, let me process your request.",
+          "Let me check this for you.",
+          "Processing your request, please hold on.",
+          "I’m retrieving the information you need, one moment please.",
+          "I’ll handle that for you right away.",
+          "Fetching the data, just a moment.",
+          "Certainly, allow me a moment to get that ready.",
+          "I’m on it. Please give me a few seconds."
+        ]
+      },
+      "negative": {
+        "variations": [
+          "The chatbot doesn't understand my queries properly.",
+          "Vehicle information retrieval is too slow.",
+          "I couldn't create a maintenance report earlier.",
+          "The file upload process keeps failing.",
+          "I didn’t receive a confirmation email after sharing a file.",
+          "Maintenance report forms are not loading properly.",
+          "Searching for files is unreliable.",
+          "The chatbot frequently gives irrelevant responses.",
+          "It’s frustrating to encounter so many errors.",
+          "The response times are too long.",
+          "Key features like file sharing are not working consistently.",
+          "I faced issues accessing vehicle data earlier today."
+        ],
+        "responses": [
+          "I'm sorry to hear that. Can you provide more details so we can assist you better?",
+          "We regret any inconvenience caused. How can we make this right for you?",
+          "Thank you for sharing your feedback. We'll work on improving this.",
+          "We’re sorry for the trouble. Your concerns will help us improve.",
+          "Our apologies for any difficulties caused. Please let us know how we can assist.",
+          "We’ll address this issue immediately. Thank you for bringing it to our attention.",
+          "Your feedback is crucial. We’ll do our best to resolve this promptly.",
+          "We’re committed to improving your experience. Let us know what went wrong.",
+          "We apologize for the inconvenience and will take steps to fix this."
+        ]
+      }
+    }
+  }
+  
